@@ -12,6 +12,7 @@ export default async function Page() {
         {data.data &&
           data.data.map((a) => (
             <Link
+              key={a.id}
               href={`/n/${a.handle}`}
               className="rounded border hover:bg-white/5 w-full h-full p-4"
             >
